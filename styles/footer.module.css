@@ -1,0 +1,65 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px; /* Set a fixed height for the footer */
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #333;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .lablelPowered{
+    margin-left: 100px;
+  }
+
+  
+/* Responsive Styles */
+/* For screens up to 640px wide (e.g., mobile phones) */
+@media (max-width: 640px) {
+    .footer {
+      padding: 10px;
+    }
+  
+    .lablelPowered {
+      margin-left: 5px;
+      font-size: 15px;
+    }
+    .contentWrapper {
+        margin-left: 5px;
+        font-size: 15px;
+      }
+  }
+  
+  /* For screens from 641px to 1024px wide (e.g., tablets) */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .footer {
+      padding: 15px;
+    }
+  
+    .lablelPowered {
+      margin-left: 10px;
+    }
+  }
+  
+  /* For screens wider than 1024px (e.g., desktops) */
+  @media (min-width: 1025px) {
+    .footer {
+      padding: 20px;
+    }
+  
+    .lablelPowered {
+      margin-left: 20px;
+     
+    }
+  }

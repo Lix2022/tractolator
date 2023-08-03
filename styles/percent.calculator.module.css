@@ -1,0 +1,126 @@
+.container {
+  background: #FFF;
+  box-shadow: -5px 5px 6px 3px rgba(0, 0, 0, 0.25);
+  margin-top: 170px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  width: 430px;
+  height: 406px;
+  margin-left: 420px;
+  flex-shrink: 0;
+}
+
+.label {
+  margin-top: 35px;
+  font-family: roboto;
+  font-weight: bold;
+  color: #2F3A40;
+}
+
+.labelOwner {
+  color: #313465;
+  margin-top: 35px;
+  font-family: roboto;
+  font-weight: bold;
+}
+
+.labelWorker {
+  color: #647a12;
+  margin-top: 35px;
+  font-family: roboto;
+  font-weight: bold;
+}
+
+.result {
+  font-family: roboto;
+  color: #2F3A40;
+}
+
+.inputText {
+  margin-top: 3%;
+  width: 307px;
+  height: 40px;
+  flex-shrink: 0;
+  color: #FFF;
+  background: #61686B;
+  font-size: 20px;
+}
+
+.button {
+  margin-top: 15px;
+  color: rgb(244, 252, 252);
+  background: #2F3A40;
+  width: 128px;
+  height: 40px;
+  flex-shrink: 0;
+  margin-bottom: 10px;
+}
+
+.clearbutton {
+  color: rgb(244, 252, 252);
+  background: #2F3A40;
+  width: 128px;
+  height: 40px;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .container {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+  
+  .inputText {
+    margin-left: 19px;
+    width: 80%;
+    max-width: 307px;
+  }
+  
+  .button, .clearbutton {
+    width: 50%;
+    max-width: 307px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    padding-bottom: 30px;
+  }
+  
+  .button, .clearbutton {
+    width: 50%;
+    max-width: 307px;
+  }
+  
+  .inputText {
+    width: 80%;
+    max-width: 307px;
+  }
+}

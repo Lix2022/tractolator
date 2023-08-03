@@ -1,0 +1,116 @@
+.container {
+  background: #FFF;
+  box-shadow: -5px 5px 6px 3px rgba(0, 0, 0, 0.25);
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 430px;
+  width: 90%;
+  height: 430px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-shrink: 0;
+}
+
+.myLabel {
+  margin-top: 2%;
+  font-family: roboto;
+  font-weight: bold;
+  color: #2F3A40;
+}
+
+.myResult {
+  margin-top: 2%;
+  font-family: roboto;
+  color: #2F3A40;
+}
+
+.myLabelDuration {
+  color: #647a12;
+  margin-top: 2%;
+  font-family: roboto;
+  font-weight: bold;
+}
+
+.myInputText {
+  margin-top: 2%;
+  width: 100%;
+  max-width: 307px;
+  height: 40px;
+  flex-shrink: 0;
+  color: #FFF;
+  background: #61686B;
+  font-size: 20px;
+}
+
+.myCalculateButton,
+.clearbutton {
+  margin-top: 2%;
+  color: rgb(244, 252, 252);
+  background: #2F3A40;
+  width: 100%;
+  max-width: 128px;
+  height: 40px;
+  flex-shrink: 0;
+  margin-bottom: 2%;
+}
+
+/* button hover */
+.myCalculateButton:hover,
+.clearbutton:hover {
+  background-color: #61686B;
+}
+
+.myCalculateButton:hover::before,
+.clearbutton:hover::before {
+  font-family: Roboto;
+  margin-right: 5px;
+}
+
+/* For screens wider than 1024px (e.g., desktops) */
+@media (min-width: 1025px) {
+  .container {
+    width: 430px;
+    margin-left: 420px;
+    margin-top: 170px;
+  }
+  
+  .myInputText {
+    max-width: 307px; /* Maintain the same max-width for larger screens */
+  }
+  
+  .myCalculateButton,
+  .clearbutton {
+    max-width: 128px; /* Maintain the same max-width for larger screens */
+  }
+}
+
+/* For screens wider than 768px and smaller than 1025px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+  }
+}
+
+/* For screens smaller than 768px (e.g., mobile devices) */
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10%;
+  }
+  
+  .myInputText {
+    max-width: 80%; /* Make the input text full width on mobile devices */
+  }
+  
+  .myCalculateButton,
+  .clearbutton {
+    max-width: 80%; /* Make the buttons full width on mobile devices */
+  }
+}

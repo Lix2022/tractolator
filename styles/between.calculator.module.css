@@ -1,0 +1,177 @@
+
+.container {
+    background: #FFF;
+    box-shadow: -5px 5px 6px 3px rgba(0, 0, 0, 0.25);
+    margin-top: 170px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    width: 430px;
+    height: 430px;
+    margin-left: 420px;
+    flex-shrink: 0;
+  }
+  
+  
+  .label {
+    margin-top: 35px;
+    font-family: roboto;
+    font-weight: bold;
+    color: #2F3A40;
+  }
+  
+  .labelPayment {
+    color: #313465;
+    margin-top: 35px;
+    font-family: roboto;
+    font-weight: bold;
+  }
+  
+  .labelDuration {
+    color: #647a12;
+    margin-top: 35px;
+    font-family: roboto;
+    font-weight: bold;
+  }
+  
+  .mySpanClass{
+    margin-top: 35px;
+    font-family: roboto;
+    color: #2F3A40;
+    
+  }
+  
+  
+  .myInputClass[type='time'] {
+    margin-top: 3%;
+    width: 307px;
+  height: 40px;
+  flex-shrink: 0;
+  color: #FFF;
+  background: #61686B;
+  font-size: 20px;
+  
+  
+  }
+  
+  
+  .myButtonClass {
+    margin-top: 15px;
+    color: rgb(244, 252, 252);
+    background: #2F3A40;
+    width: 128px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    
+  }
+
+  .myButtonClass {
+    margin-top: 15px;
+    color: rgb(244, 252, 252);
+    background: #2F3A40;
+    width: 128px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+    
+  }
+
+  .clearButton {
+    color: rgb(244, 252, 252);
+    background: #2F3A40;
+    width: 128px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    
+  }
+  
+  
+  
+  .mySpanClass {
+    margin-left: 5px;
+  }
+  
+   /* button hover */
+    
+   .myButtonClass:hover {
+    background-color: #61686B;
+  }
+  
+  .myButtonClass:hover::before {
+    
+    font-family: Roboto;
+    margin-right: 5px;
+  }
+
+  .clearButton:hover {
+    background-color: #61686B;
+  }
+  
+  .clearButton:hover::before {
+    
+    font-family: Roboto;
+    margin-right: 5px;
+  }
+
+  /* For screens up to 640px wide (e.g., mobile phones) */
+@media (max-width: 640px) {
+  .container {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+    
+  }
+
+  .myInputClass[type='time'] {
+    width: 70%;
+  }
+
+  .myButtonClass,
+  .clearButton {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+}
+
+/* For screens from 641px to 1024px wide (e.g., tablets) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .container {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 100px;
+  }
+
+  .myInputClass[type='time'] {
+    width: 80%;
+  }
+
+  .myButtonClass,
+  .clearButton {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}
+
+/* For screens wider than 1024px (e.g., desktops) */
+@media (min-width: 1025px) {
+  .container {
+    width: 430px;
+    margin-left: 420px;
+    margin-top: 170px;
+  }
+
+  .myInputClass[type='time'] {
+    width: 307px;
+  }
+
+  .myButtonClass,
+  .clearButton {
+    width: 128px;
+    margin-bottom: 20px;
+  }
+}
+
+/* The rest of the CSS code remains the same as provided in the original question */
